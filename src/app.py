@@ -1,3 +1,6 @@
-from curses import flash
-from flask import Flash
-app=Flash(__name__)
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return "Hola Mundo"
