@@ -1,6 +1,10 @@
-from src.app import sum
+from distutils.debug import DEBUG
+from pickle import TRUE
+from src.app import app
+HOST="localhost"
+PORT=4000
+DEBUG=TRUE
 
-def main() -> None:
-    sum (7, 1)
+
 if __name__ == '__main__':
-    main()
+    app.run(HOST, PORT, DEBUG)

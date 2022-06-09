@@ -1,2 +1,3 @@
-def sum (a,b):
-    return a + b
+from curses import flash
+from flask import Flash
+app=Flash(__name__)
